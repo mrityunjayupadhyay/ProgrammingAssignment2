@@ -1,3 +1,18 @@
+## This script contains wrapper implementation of cached inverse matrix call
+
+##usage/how to run
+# 1. Create matrix
+#     mat<-cbind(c(3,7,1),c(5,12,4),c(8,10,2))
+#
+# 2. Pass it to makeCacheMatrix to get wrapper object
+#   myMat <- makeCacheMatrix(mat)
+#
+# 3. call caheSolve with wrapper object.
+#   cacheSolve(myMat)
+#   Frist call to this function will compute inverse and will not show message "getting cached data"
+#   subseqent calls will return cached object ans show this message.
+
+
 
 ## This function provides wrapper on matrix which saves/computes inverse of matrix only once.
 
